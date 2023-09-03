@@ -1,0 +1,97 @@
+
+.index {
+
+  .background-split {
+    height: 1080px;
+    width: 100%;
+    background: radial-gradient(50% 50% at 50% 50%, #300871 0%, #000000 100%),url('/assets//images/carousel_background.png');;
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-blend-mode:lighten;
+  }
+
+  .line {
+  width: 124px;
+  height: 12px;
+  }
+
+  .bg-dark:hover {
+  background: rgba(0, 0, 0, 0.5) !important;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .circle {
+    &-whiite-8 {
+      font-size: 8px;
+      background-color: rgba(255, 255, 255, 1);
+    }
+    &-black-8 {
+      font-size: 8px;
+      background-color: rgba(0, 0, 0, 1);
+    }
+  }
+
+  .swiper-slide {
+    background: #fff;
+    height: 416px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .swiper-scrollbar {
+  background: rgba(255, 255, 255, 0.2);
+  }
+
+  .swiper-button-next, .swiper-button-prev {
+    color: #fff;
+    position: initial;
+    margin-top: 0;
+    width: auto;
+    height: auto;
+    &::after {
+      content: '';
+    }
+  }
+
+  .bottom-5 {
+    bottom: -15% !important;
+  }
+  .alphaboxCircle {
+    animation-name: rotate;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; 
+    animation-fill-mode: both; 
+  }
+  
+  @keyframes rotate {
+    0% { transform: rotate(0deg) }
+    100% { transform: rotate(360deg) }
+  }
+
+  @media (max-width:1200px) {
+    .background-split {
+      background: radial-gradient(50% 50% at 50% 50%, #300871 0%, #000000 100%),url('/assets//images/Rectangle\ 19.png');;
+      background-repeat: no-repeat;
+   }
+
+   .w-md-100 {
+    width: 100% !important;
+   }
+  }
+  @media (max-width:992px) {
+
+    .bottom-5 {
+      bottom: -5%;
+    }
+  }
+}
