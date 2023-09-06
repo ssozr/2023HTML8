@@ -378,6 +378,7 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 // scss-docs-start spacer-variables-maps
 $spacer: 1rem !default;
 $spacers: (
+  -3: -12px,
   -4: -16px,
   0: 0,
   1: $spacer * .25,
